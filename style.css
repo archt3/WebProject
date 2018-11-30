@@ -1,0 +1,31 @@
+	
+			body 
+			{
+				
+				 background-repeat: no-repeat;	
+				 background-image: "images/images.jpg";	
+			}
+
+			h1 
+			{
+   				color: maroon;
+    			margin-left: 40px;
+			}
+			h2
+			{
+				color: green;
+			}
+			#me
+			{
+				text-align: center;
+			} 
+
+			#intro
+			{
+				margin-left: 40px
+			}
+			#units
+			{
+				margin-left: 40px
+			}
+		

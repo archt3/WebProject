@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style>
+
+			body 
+			{
+				
+				 background-repeat: no-repeat;	
+				 background-image: url("images/images.jpg");	
+				 background-size: cover;
+				 font-family: Arial, Helvetica, sans-serif;
+			}
+			p
+			{
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			h1 
+			{
+   				color: #a36f1d;
+    			margin-left: 40px;
+    			font-family: Arial, Helvetica, sans-serif;
+			}
+			h2
+			{
+				color: #a36f1d;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			h3{
+				color:white;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			h4{
+				color:white;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			#me
+			{
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			} 
+
+			#intro
+			{
+				margin-left: 40px;
+				font-family: Arial, Helvetica, sans-serif;
+					
+			}
+			#units
+			{
+				margin-left: 40px;
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			#date
+			{
+				text-align:right;
+				color: green;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 19pt;
+			}
+		</style>
+
+
+    	<meta charset="utf-8">
+
+		<title>
+			Cars
+		</title>
+
+		<link rel="stylesheet" href="styles/style.css"> <!--EXTERNAL CSS -->
+	</head>
+	<body background: "images/images.jpg" >
+		<div id=date>
+
+		</div>
+		<script>
+			var dates = new Date();
+			var day = dates.getDate();
+			var month = dates.getMonth()+1;  //because jan = 0
+			var year = dates.getFullYear();
+
+			document.getElementById("date").innerHTML = month + '/' + day + '/' + year;
+		</script>
+
+		<h1>
+			Cars
+		</h1>
+		<div id = "me">
+			<p>
+			Archit Raichura<br/>
+			<a href="mailto:archit.raichura@gmail.com">archit.raichura@gmail.com</a><br>
+
+			I attend American High School and am taking AP Computer Science Principles.
+			</p>
+		</div>
+		<br>
+
+		<div id=menu>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tab1.html">Companies</a></li>
+				<li><a class="active" href="tab2.html">Types</a></li>
+			</ul>
+
+		</div>
+
+		<main>
+		<div id = intro>
+			<h2>
+				Types
+			</h2>
+		</div>
+	
+
+		<div id = units>
+			
+			<h3> Here is a list of types of cars</h3>
+			
+			<h4>
+				Sports Cars:<br><br>
+				Sports cars are light, nimble cars, often without a lot of horsepower. <br><br>
+				<img src="https://www.mazdausa.com/siteassets/vehicles/2018/mx5-st/trims/gt/2018-Mazda-MX-5-Miata-grand-touring.jpg" style="width:400px;height:200px;"></a>
+			</h4>
+			<h4>
+				Muscle Cars:<br><br>
+				Muscle Cars are a largely American category of cars. They are heavy, with ample amounts of horsepower.<br><br>
+				<img src="https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/17q3/685270/2018-dodge-challenger-srt-demon-first-drive-review-car-and-driver-photo-686155-s-original.jpg" style="width:400px;height:250px;"></a>
+			</h4>
+			<h4>
+				Supercars:<br><br>
+				Supercars are often expensive, ranging from $100,000 to $700,000. They have more horsepower than sports cars.<br><br>
+				<img src="https://hips.hearstapps.com/hmg-prod/images/2019-ferrari-488-pista-placement2-1528476621.jpg" style="width:400px;height:230px;"></a>
+			</h4>
+				<h4>
+				Grand Tourers:<br><br>
+				Grand tourers are a subset of supercars and are expensive cars, usually around $200,000. They are essentially more luxurious versions, like the Aston Martin shown.<br><br>
+				<img src="http://www.imcdb.org/i985024.jpg" style="width:400px;height:220px;"></a>
+			</h4>
+			<h4>
+				Hypercars:<br><br>
+				Hypercars are often extremely expensive, ranging from $700,000 into millions. They have more horsepower than supercars, but are also heavier, since they weigh more (a result of the additional weight of the engines, as well as the additional luxury features that owners demand).<br><br>
+				<img src="https://assets.bugatti.com/fileadmin/_processed_/sei/p273/se-image-839f144a95ea2acd2a6c36afa9726b1b.jpg" style="width:400px;height:180px;"></a>
+			</h4>
+		
+
+		</div>
+	</main>
+	
+	</body>
+</html>
