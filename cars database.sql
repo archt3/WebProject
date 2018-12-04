@@ -26,11 +26,11 @@ VALUES ('2012', 'SUV', 'Toyota', 'Highlander', '3200'),
 
 ('2019','Coupe','Ferrari','488','252800'),
 ('2017','Coupe','Chevrolet','Camaro SS','27988'),
-('','','','',''),
-('','','','',''),
-('','','','',''),
-('','','','',''),
-('','','','','')
+('2008','Coupe','Nissan','350Z 6Speed Manual','12000'),
+('1967','Coupe','Volvo','122s','8000'),
+('2013','Hatchback','Volkswagen','Golf GTI','12800'),
+('2005','Coupe','Dodge','Neon SXT','2100'),
+('2015','Hatchback','Mini','Cooper Countryman','16350')
 ;
 
 
