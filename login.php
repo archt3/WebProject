@@ -1,7 +1,7 @@
 <?php
     $host = "127.0.0.1";
-    $user = "lmillard";
+    $user = "architr";
     $pass = "";
-    $db = "sample_db";
+    $db = "cars";
     $port = 3306;
  ?>
