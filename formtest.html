@@ -1,3 +1,5 @@
+
+
 <html>
 <head>
 	<title>phptest</title>
@@ -82,6 +84,38 @@
 				 cursor:pointer;
 				 font-family: Arial, Helvetica, sans-serif;
 			}
+			input[type=text], select {
+				  
+				  padding: 12px 20px;
+				  margin: 8px 0;
+				 display: inline-block;
+				  border: 1px solid #ccc;
+				  border-radius: 4px;
+				  box-sizing: border-box;
+				  width: 30%;
+					
+					text-align:center;
+					margin:auto;
+				}
+				
+				input[type=submit] {
+				  
+				  background-color: #4f6587;
+				  color: white;
+				  padding: 14px 20px;
+				  margin: 8px 0;
+				  border: none;
+				  border-radius: 4px;
+				  cursor: pointer;
+				  width: 30%;
+					
+					text-align:center;
+					
+					margin-left: auto;
+    margin-right: auto;
+				}
+			
+			
 </style>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -105,8 +139,7 @@
 		<div id = "me">
 			<p>
 			Archit Raichura<br/>
-			<a href="mailto:archit.raichura@gmail.com">archit.raichura@gmail.com </a><br>
-			I attend American High School and am taking AP Computer Science Principles.
+			Akash Alamuthu
 			</p>
 		</div>
 		<br>
@@ -117,33 +150,21 @@
 				<li><a href="tab2.html">Types</a></li>
 				<li><a class="active" href="formtest.html">Car Search</a></li>
 			</ul>
-
-		</div>
-
-	<form action = 'phptest2.php' method = "post">
+			<br>
+			
+	<form action = 'phptest2.php' method = "post" id="form">
 		<select name = "myTest">
 			<option value = "yr">Year</option>
-			<option value = "typ">type</option>
-			<option value = "order by cost;">Sort by Price</option>
-		</select>
-		<input type = "submit" value="submit the form">
+			<option value = "typ">Type</option>
+			<option value = "manufacturer">Make</option>
+			<option value = "model">Model</option>
+			<option value = "order by yr">Order by Year</option>
+			<option value = "order by cost ascending">Order By Cost Ascending</option>
+			<option value = "order by cost descending">Order by Cost Descending</option>
+			<option value = "order by make">Order by Make</option>
+			<option value ="order by type">Order by Type</option>
+		</select><br>
+		<input type = "submit" value="Submit the form">
 	</form>
-	<div id=menu>
-		<link rel="stylesheet" href="style.css"> <!--EXTERNAL CSS -->
-		<script>
-					function changebg() 
-					{
-						document.body.style.backgroundImage = "url(images/bg.jpg)";				
-					}
-		</script>
-		<script>
-			function movetext ()
-			{
-					document.getElementById("intro").style.marginLeft = "37%";
-
-			}
-		</script>
-		
-
-	
+</body>
 </html>
