@@ -9,8 +9,9 @@
 			{
 				
 				 background-repeat: no-repeat;	
-				 background-image: url("images/images.jpg");	
+				 background-image: url("images/download.jpg");	
 				 background-size: cover;
+				 background-attachment: fixed;
 				 font-family: Arial, Helvetica, sans-serif;
 			}
 			p
@@ -21,8 +22,14 @@
 			h1 
 			{
    				color: #a36f1d;
-    			margin-left: 40px;
-    			font-family: Arial, Helvetica, sans-serif;
+    			text-align: center;
+    			
+    			font-family: "Bookman Old Style"; 
+    			font-size: 34px; 
+    			font-style: normal; 
+    			font-variant: normal; 
+    			font-weight: 700;
+    			line-height: 26.4px;
 			}
 			h2
 			{
@@ -71,7 +78,7 @@
 			Cars
 		</title>
 
-		<link rel="stylesheet" href="style.css"> <!--EXTERNAL CSS -->
+		<link rel="stylesheet" href="styles.css"> <!--EXTERNAL CSS -->
 	</head>
 	<body background: "images/images.jpg" >
 		<div id=date>
@@ -85,7 +92,16 @@
 
 			document.getElementById("date").innerHTML = month + '/' + day + '/' + year;
 		</script>
+<div id=menu>
 
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="tab1.html">Companies</a></li>
+				<li><a href="tab2.html">Types</a></li>
+				<li><a href="formtest.html">Car Search</a></li>
+			</ul>
+
+		</div>
 		<h1>
 			Cars
 		</h1>
@@ -96,17 +112,6 @@
 			</p>
 		</div>
 		<br>
-
-		<div id=menu>
-
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a class="active" href="tab1.html">Companies</a></li>
-				<li><a href="tab2.html">Types</a></li>
-				<li><a href="formtest.html">Car Search</a></li>
-			</ul>
-
-		</div>
 
 		<main>
 		<div id = intro>

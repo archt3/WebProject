@@ -1,6 +1,7 @@
 <style>
 	#cars{
 		color:white;
+		
 	}
 </style>
 <table id="cars">
@@ -47,7 +48,7 @@
 				$result->close();
 					$conn->close();
 	
-		case 'order by cost descending':$query = "SELECT * FROM cars ORDER BY cast(yr as signed integer) DESC;";
+		case 'order by cost descending':$query = "SELECT * FROM cars ORDER BY cast(cost as signed integer) DESC;";
 		$result = mysqli_query($conn, $query);
 				
 				while ($row = mysqli_fetch_assoc($result)) {
@@ -83,6 +84,64 @@
 				$result->close();
 					$conn->close();		
 					
+		case 'pc':$query = "SELECT * FROM cars where typ='Coupe';";
+		$result = mysqli_query($conn, $query);
+				
+				while ($row = mysqli_fetch_assoc($result)) {
+					
+					echo  "\t<tr><td>".$row['yr']."</td><td>".$row['typ']."</td><td>".$row['manufacturer']."</td><td>".$row['model']."</td><td>".$row['cost']."</td></tr>\n".'</span>'; 
+					
+				} 
+				break;
+				$result->close();
+					$conn->close();		
+					
+					case 'ph':$query = "SELECT * FROM cars where typ='Hatchback';";
+		$result = mysqli_query($conn, $query);
+				
+				while ($row = mysqli_fetch_assoc($result)) {
+					
+					echo  "\t<tr><td>".$row['yr']."</td><td>".$row['typ']."</td><td>".$row['manufacturer']."</td><td>".$row['model']."</td><td>".$row['cost']."</td></tr>\n".'</span>'; 
+					
+				} 
+				break;
+				$result->close();
+					$conn->close();	
+					
+					case 'ps':$query = "SELECT * FROM cars where typ='Sedan';";
+		$result = mysqli_query($conn, $query);
+				
+				while ($row = mysqli_fetch_assoc($result)) {
+					
+					echo  "\t<tr><td>".$row['yr']."</td><td>".$row['typ']."</td><td>".$row['manufacturer']."</td><td>".$row['model']."</td><td>".$row['cost']."</td></tr>\n".'</span>'; 
+					
+				} 
+				break;
+				$result->close();
+					$conn->close();	
+					case 'ps2':$query = "SELECT * FROM cars where typ='SUV';";
+		$result = mysqli_query($conn, $query);
+				
+				while ($row = mysqli_fetch_assoc($result)) {
+					
+					echo  "\t<tr><td>".$row['yr']."</td><td>".$row['typ']."</td><td>".$row['manufacturer']."</td><td>".$row['model']."</td><td>".$row['cost']."</td></tr>\n".'</span>'; 
+					
+				} 
+				break;
+				$result->close();
+					$conn->close();
+					case 'pt':$query = "SELECT * FROM cars where typ='Truck';";
+		$result = mysqli_query($conn, $query);
+				
+				while ($row = mysqli_fetch_assoc($result)) {
+					
+					echo  "\t<tr><td>".$row['yr']."</td><td>".$row['typ']."</td><td>".$row['manufacturer']."</td><td>".$row['model']."</td><td>".$row['cost']."</td></tr>\n".'</span>'; 
+					
+				} 
+				break;
+				$result->close();
+					$conn->close();
+					
 	
 		default:
 			
@@ -94,7 +153,7 @@
 				$result = mysqli_query($conn, $query);
 				while ($row = mysqli_fetch_assoc($result)) {
 					echo "<br>";
-				echo '<span style="color:white">'.$row[$testField].'</span>';
+				echo '<span style="color:white" align>'.$row[$testField].'</span>';
 				}
 		}}
 		

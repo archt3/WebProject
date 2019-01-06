@@ -15,7 +15,8 @@
 			{
 				
 				 background-repeat: no-repeat;	
-				 background-image: url("images/images.jpg");	
+				 background-attachment: fixed;
+				 background-image: url("images/download.jpg");	
 				 background-size: cover;
 				 font-family: Arial, Helvetica, sans-serif;
 			}
@@ -26,9 +27,15 @@
 			}
 			h1 
 			{
-   				color: #a36f1d;
-    			margin-left: 40px;
-    			font-family: Arial, Helvetica, sans-serif;
+   			color: #a36f1d;
+    			text-align: center;
+    			
+    			font-family: "Bookman Old Style"; 
+    			font-size: 34px; 
+    			font-style: normal; 
+    			font-variant: normal; 
+    			font-weight: 700;
+    			line-height: 26.4px;
 			}
 			h2
 			{
@@ -108,7 +115,7 @@
 				  border-radius: 4px;
 				  cursor: pointer;
 				  width: 30%;
-					
+						
 					text-align:center;
 					
 					margin-left: auto;
@@ -117,7 +124,7 @@
 			
 			
 </style>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div id=date>
@@ -132,10 +139,20 @@
 
 			document.getElementById("date").innerHTML = month + '/' + day + '/' + year;
 		</script>
-
+<div id=menu>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="tab1.html">Companies</a></li>
+				<li><a href="tab2.html">Types</a></li>
+				<li><a class="active" href="formtest.html">Car Search</a></li>
+			</ul>
+			<br>
+			</div>
 			<h1>
 			Cars
 		</h1>
+		
+		
 		<div id = "me">
 			<p>
 			Archit Raichura<br/>
@@ -144,14 +161,6 @@
 		</div>
 		<br>
 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="tab1.html">Companies</a></li>
-				<li><a href="tab2.html">Types</a></li>
-				<li><a class="active" href="formtest.html">Car Search</a></li>
-			</ul>
-			<br>
-			
 	<form action = 'phptest2.php' method = "post" id="form">
 		<select name = "myTest">
 			<option value = "yr">Year</option>
@@ -163,6 +172,11 @@
 			<option value = "order by cost descending">Order by Cost Descending</option>
 			<option value = "order by make">Order by Make</option>
 			<option value ="order by type">Order by Type</option>
+			<option value ="pc">Show only Coupes</option>
+			<option value ="ph">Show only Hatchbacks</option>
+			<option value ="ps">Show only Sedans</option>
+			<option value ="ps2">Show only SUV</option>
+			<option value ="pt">Show only Truck</option>
 		</select><br>
 		<input type = "submit" value="Submit the form">
 	</form>
