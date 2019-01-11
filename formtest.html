@@ -78,7 +78,7 @@
 			{
 					margin-top: 15px;
 					margin-left: 23%;
-					margin right: 23%;
+					margin-right: 23%;
 					cursor:pointer;
 					font-family: Arial, Helvetica, sans-serif;
 			}
@@ -161,7 +161,7 @@
 		</div>
 		<br>
 
-	<form action = 'phptest2.php' method = "post" id="form">
+	<form action = 'phptest2.php' method = "post" id="form"> <!--ALL OF THE POSTED VALUES ARE THE QUERIES -AR -->
 		<select name = "myTest">
 			<option value = "Select yr from cars;">Year Only</option>
 			<option value = "Select typ from cars;">Type Only</option>
@@ -176,7 +176,7 @@
 			<option value ="SELECT * FROM cars where typ='Coupe';">Show only Coupes</option>
 			<option value ="SELECT * FROM cars where typ='Hatchback';">Show only Hatchbacks</option>
 			<option value ="SELECT * FROM cars where typ='Sedan';">Show only Sedans</option>
-			<option value ="pSELECT * FROM cars where typ='SUV';">Show only SUV</option>
+			<option value ="SELECT * FROM cars where typ='SUV';">Show only SUV</option>
 			<option value ="SELECT * FROM cars where typ='Truck';">Show only Truck</option>
 		</select><br>
 		<input type = "submit" value="Submit the form">

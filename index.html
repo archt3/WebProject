@@ -112,10 +112,10 @@
 	</head>
 	<body id=body>
 		
-		<div id=date>
+		<div id=date> 
 
 		</div>
-		<script>
+		<script> //JS function to show the date at the top-->
 			var dates = new Date();
 			var day = dates.getDate();
 			var month = dates.getMonth()+1;  //because jan = 0
@@ -150,7 +150,7 @@
 			
 			
 		
-		<div id = "intro" onclick="movetext()">
+		<div id = "intro" onclick="movetext()"> <!--JS function to move the text AR-->
 			<p>
 				Click on this section of text to make it move.<br>
 				This website is all about cars. Visit the other pages for more information on cars.<br>
@@ -158,12 +158,13 @@
 			</p>
 		</div>
 
-			<button class="button button1" onclick="changebg()">Change Background</button>
+			<button class="button button1" onclick="changebg()">Change Background</button> <!--button to change the bg img AR-->
 		
 		<div id = "pics" onClick="caption()">
 			<script>
 			function caption ()
 			{
+				//function to place a caption under the image on clicking the image
 					document.getElementById("caption").innerHTML = 
 					"The Nissan GT-R";
 
