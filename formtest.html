@@ -163,20 +163,21 @@
 
 	<form action = 'phptest2.php' method = "post" id="form">
 		<select name = "myTest">
-			<option value = "yr">Year</option>
-			<option value = "typ">Type</option>
-			<option value = "manufacturer">Make</option>
-			<option value = "model">Model</option>
-			<option value = "order by yr">Order by Year</option>
-			<option value = "order by cost ascending">Order By Cost Ascending</option>
-			<option value = "order by cost descending">Order by Cost Descending</option>
-			<option value = "order by make">Order by Make</option>
-			<option value ="order by type">Order by Type</option>
-			<option value ="pc">Show only Coupes</option>
-			<option value ="ph">Show only Hatchbacks</option>
-			<option value ="ps">Show only Sedans</option>
-			<option value ="ps2">Show only SUV</option>
-			<option value ="pt">Show only Truck</option>
+			<option value = "Select yr from cars;">Year Only</option>
+			<option value = "Select typ from cars;">Type Only</option>
+			<option value = "Select manufacturer from cars;">Make Only</option>
+			<option value = "Select model from cars">Model Only</option>
+			<option value = "Select cost from cars">Cost Only</option>
+			<option value = "SELECT * FROM cars ORDER BY CAST(yr as SIGNED INTEGER) ASC;">Order by Year</option>
+			<option value = "SELECT * FROM cars ORDER BY CAST(cost as SIGNED INTEGER) ASC;">Order By Cost Ascending</option>
+			<option value = "SELECT * FROM cars ORDER BY CAST(cost as SIGNED INTEGER) DESC;">Order by Cost Descending</option>
+			<option value = "SELECT * FROM cars ORDER BY manufacturer;">Order by Make</option>
+			<option value ="SELECT * FROM cars ORDER BY typ;">Order by Type</option>
+			<option value ="SELECT * FROM cars where typ='Coupe';">Show only Coupes</option>
+			<option value ="SELECT * FROM cars where typ='Hatchback';">Show only Hatchbacks</option>
+			<option value ="SELECT * FROM cars where typ='Sedan';">Show only Sedans</option>
+			<option value ="pSELECT * FROM cars where typ='SUV';">Show only SUV</option>
+			<option value ="SELECT * FROM cars where typ='Truck';">Show only Truck</option>
 		</select><br>
 		<input type = "submit" value="Submit the form">
 	</form>
