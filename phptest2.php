@@ -1,6 +1,7 @@
 <style>
 	#cars{
-		color: #a36f1d;
+		color: #0392de;
+		margin: 0 auto;
 		
 	}
 </style>
