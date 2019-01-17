@@ -63,7 +63,7 @@
 			#pics
 			{
 					margin-top: 15px;
-					margin-left: 13%;
+					margin-left:19%;
 					
 					cursor:pointer;
 					font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +78,17 @@
 				 font-family: Arial, Helvetica, sans-serif;
 				 opacity: 0.76;
 			}
-			
+			.zoom {
+			  padding: 50px;
+			  
+			  transition: transform .2s; /* Animation */
+			  width: 200px;
+			  height: 200px;
+			  margin: 0 auto;
+			}
+			.zoom:hover {
+				  transform: scale(1.5);
+				}
 			#caption{
 				color: white;
 				margin-left: 45%;
@@ -171,7 +181,7 @@
 			}
 		</script>
 		<div class="gtr" id="gtr">
-			<img src="images/cs.jpg" alt="nissan gt-r" style="width:1000px;height:560px;">
+			<img src="images/cs.jpg" class="zoom" alt="nissan gt-r" style="width:800px;height:470px;">
 	</div>
 	</div>
 		
